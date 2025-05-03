@@ -1,0 +1,76 @@
+body {
+    /* O el contenedor que ocupe toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    min-height: 100vh;
+    /* Asegura que el contenedor ocupe al menos el alto de la ventana */
+    margin: 0;
+    /* Opcional: para eliminar el margen predeterminado del body */
+    font-family: "Revalia", sans-serif;
+    gap: 20px;
+}
+
+.container-dados {
+    align-self: center;
+    display: flex;
+    /* Para ordenar los .dado-bloque horizontalmente */
+    flex-direction: row;
+    /* Asegura que la dirección principal sea horizontal */
+    flex-wrap: wrap;
+    /* Opcional: permite que los bloques pasen a la siguiente línea si no hay suficiente espacio */
+    gap: 20px;
+    /* Opcional: espacio entre los .dado-bloque */
+    justify-content: flex-start;
+    /* Opcional: cómo alinear los bloques horizontalmente (start, center, space-around, space-between, etc.) */
+}
+
+.dado-bloque {
+    display: flex;
+    /* Para ordenar los elementos dentro de cada bloque verticalmente */
+    flex-direction: column;
+    /* Asegura que la dirección principal sea vertical */
+    align-items: center;
+    /* Opcional: alinea los elementos horizontalmente dentro del bloque (center, flex-start, flex-end) */
+    gap: 10px;
+    /* Opcional: espacio entre la imagen y los botones */
+    text-align: center;
+    /* Opcional: centra el texto debajo de la imagen si lo hubiera */
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.botones {
+    display: flex;
+    /* Para ordenar los botones horizontalmente */
+    flex-direction: row;
+    /* Asegura que la dirección principal sea horizontal */
+    align-items: center;
+    /* Opcional: alinea los botones verticalmente (en el centro) */
+    gap: 10px;
+    /* Opcional: espacio entre los botones y el elemento <number-flow-react> */
+}
+
+.botones button {
+    /* Opcional: estilos para los botones */
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.botones number-flow-react {
+    /* Opcional: estilos para el elemento del contador */
+    width: 30px;
+    text-align: center;
+}
+
+.dado-bloque img {
+    width: 100px;
+    /* Ancho fijo de 300 píxeles */
+    height: 100px;
+    /* Alto fijo de 200 píxeles */
+}

@@ -3,43 +3,75 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="frontend\css\style.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Revalia&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="/static/images/Gnomito.ico" type="image/png">
         <title>Dados Trucados</title>
     </head>
     <body>
         <h1>Escoge tus dados</h1>
-        <div id="dados">
-            <ol>
-                <li>
-                    <img
-                        src="{{ url_for('static', filename='images/D4.png') }}">
-                    D4</li>
-                <li>
-                    <img
-                        src="{{ url_for('static', filename='images/D6.png') }}">
-                    D6</li>
-                <li>
-                    <img
-                        src="{{ url_for('static', filename='images/D8.png') }}">
-                    D8</li>
-                <li>
-                    <img
-                        src="{{ url_for('static', filename='images/D10.png') }}">
-                    D10</li>
-                <li>
-                    <img
-                        src="{{ url_for('static', filename='images/D10P.png') }}">
-                    D10%</li>
-                <li>
-                    <img
-                        src="{{ url_for('static', filename='images/D12.png') }}">
-                    D12</li>
-                <li>
-                    <img
-                        src="{{ url_for('static', filename='images/D20.png') }}">
-                    D20</li>
-            </ol>
+        <div class="container-dados">
+            <div class="dado-bloque">
+                <img src="static\images\dados\D4.png">
+                <div class="botones">
+                    <button>-</button>
+                    <number-flow-react>0</number-flow-react>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="dado-bloque">
+                <img src="static\images\dados\D6.png">
+                <div class="botones">
+                    <button>-</button>
+                    <number-flow-react>0</number-flow-react>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="dado-bloque">
+                <img src="static\images\dados\D8.png">
+                <div class="botones">
+                    <button>-</button>
+                    <number-flow-react>0</number-flow-react>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="dado-bloque">
+                <img src="static\images\dados\D10.png">
+                <div class="botones">
+                    <button>-</button>
+                    <number-flow-react>0</number-flow-react>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="dado-bloque">
+                <img src="static\images\dados\D10P.png">
+                <div class="botones">
+                    <button>-</button>
+                    <number-flow-react>0</number-flow-react>
+                    <button>+</button>
+                </div>
+            </div><div class="dado-bloque">
+                <img src="static\images\dados\D12.png">
+                <div class="botones">
+                    <button>-</button>
+                    <number-flow-react>0</number-flow-react>
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="dado-bloque">
+                <img src="static\images\dados\D20.png">
+                <div class="botones">
+                    <button>-</button>
+                    <number-flow-react>0</number-flow-react>
+                    <button>+</button>
+                </div>
+            </div>
         </div>
+        <h1>Resultados</h1>
 
     </body>
 </html>
